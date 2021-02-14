@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- audio标签：向页面中引入一个音频 -->
+    <!-- video标签：向页面中引入一个视频 -->
+    <!-- src属性：要引入的资源的路径或地址 -->
+    <!-- controls 允许用户控制播放 -->
+    <!-- loop 循环播放设置 -->\
+    <!-- 最好使用第二种模式 -->
+    <audio src="../audio/借口-周杰伦-94236(1).mp3" controls loop></audio>
+    <audio controls>
+        <source src="../audio/借口-周杰伦-94236(1).mp3"/>
+        <embed src="../audio/借口-周杰伦-94236(1).mp3" type="audio/mp3" width="300"/>
+        <!-- 第二种用于不支持audio标签的浏览器 -->
+    </audio>
+    <br>
+    <video src="../video/example.mp4" controls width="300"></video>
+    <video controls width="300">
+        <source src="../video/example.mp4"/>
+        <embed src="../video/example.mp4" type="video/mp4" width="300"/>
+    </video>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!-- 弹出窗的设置 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../icon-font/css/all.css">
+    <style>
+        body {
+            font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        }
+
+        .top-nav {
+            line-height: 30px;
+            color: rgb(153, 153, 153);
+            background-color: rgb(227, 228, 229);
+            margin: 50px auto;
+        }
+
+        .nav-list {
+            width: 990px;
+            height: 30px;
+            margin: 0 auto;
+        }
+
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        a.special {
+            margin: 0 8px;
+            width: 24px;
+            overflow: hidden;
+            white-space: nowrap;
+            color: #e33333;
+            text-overflow: ellipsis;
+        }
+
+        .fa-map-marker-alt {
+            padding: 0 5px;
+            font-size: 14px;
+        }
+
+        .fa-angle-down {
+            color: rgb(153, 153, 153);
+            margin-left: 3px;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .style-red {
+            color: red;
+        }
+
+        span {
+            margin: 0 10px;
+            color: rgba(153, 153, 153, .2);
+            float: left;
+        }
+
+        .hover-white:hover {
+            background-color: white;
+            border: 1px rgb(204, 204, 204) solid;
+            border-bottom: 0;
+        }
+
+        div.current-city {
+            padding-right: 5px;
+            position: relative;
+            z-index: 1000;
+            border: 1px rgba(204, 204, 204, 0) solid;
+            border-bottom: 0;
+        }
+
+        /* 弹出框的样式 */
+        .city-list {
+            width: 300px;
+            height: 436px;
+            background-color: white;
+            border: 1px rgb(204, 204, 204) solid;
+            /* 先隐藏 */
+            display: none;
+            position: absolute;
+            z-index: 999;
+            top: 80px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* hover状态则显示 */
+        div.location:hover .city-list {
+            display: block;
+        }
+
+        div.location:hover .current-city {
+            background-color: white;
+            border: 1px rgb(204, 204, 204) solid;
+            border-bottom: 0;
+        }
+
+        /* 父元素的width要设置好 */
+        div.location {
+            width: 60px;
+            float: left;
+        } 
+
+        .right-bar {
+            float: right;
+        }
+
+        .nav-list a {
+            float: left;
+            padding: 0 2px;
+            border: 1px rgba(204, 204, 204, 0) solid;
+            border-bottom: 0;
+        }
+
+        .right-bar div {
+            float: left;
+            padding: 0 2px;
+            border: 1px rgba(204, 204, 204, 0) solid;
+            border-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="nav-list clearfix">
+            <!-- 弹出框的设置 -->
+            <div class="location ">
+                <div href="#" class="current-city">
+                    <i class="fas fa-map-marker-alt style-red"></i>安徽
+                </div>
+                <div class="city-list">
+                </div>
+            </div>
+            <div class="right-bar">
+                <a href="#">你好，请登录</a>
+                <a href="#" class="special">免费注册</a>
+                <a href="#" class="adding">我的订单</a>
+                <span>|</span><a href="#" class="adding hover-white">我的京东<i class="fas fa-angle-down"></i></a>
+                <span>|</span><a href="#" class="adding">京东会员</a>
+                <span>|</span><a href="#" class="adding style-red hover-white">企业采购<i class="fas fa-angle-down"></i></a>
+                <span>|</span>
+                <div href="#" class="adding hover-white">客户服务<i class="fas fa-angle-down"></i></div>
+                <div class="service-list"></div>
+                <span>|</span>
+                <div href="#" class="adding hover-white">网站导航<i class="fas fa-angle-down"></i></div>
+                <span>|</span>
+                <div href="#" class="adding">手机京东</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

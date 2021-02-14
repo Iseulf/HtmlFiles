@@ -1,0 +1,22 @@
+/* 关系包括:父元素、子元素、祖先元素、后代元素、兄弟元素 */
+/* 子元素选择器：父元素>子元素 */
+div>span{
+    color: aquamarine;
+    font-size: 20px;
+}
+/* 后代选择器：祖先元素 后代元素 */
+div span{
+    color: red;
+    font-size: 30px;
+}
+/* 兄弟选择器：前一个+下一个兄弟元素(紧挨着的,之间不能有其他元素) */
+p+span{
+    color:blue;
+    font-size: 20px;
+}
+/* 兄弟选择器：前一个~下一个兄弟元素(下面所有的兄弟元素) */
+p~span{
+    color: blueviolet;
+    font-size: 30px;
+}
+/* 以上样式在html中会按优先级覆盖，不会都体现 */

@@ -1,0 +1,13 @@
+/* 常用选择器主要有id选择器、类选择器、标签选择器
+    id选择器:#id
+    类选择器:.classname
+    标签 */
+#special{
+    color: yellow;
+}
+.classname1{
+    color: red;
+}
+div{
+    color: aqua;
+}

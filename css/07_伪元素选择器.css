@@ -1,0 +1,14 @@
+/* 伪元素表示页面中特殊位置的元素，如选中首字母/第一段等等 */
+/* 伪元素一般以::开头 */
+/* ::first-letter 第一个字母 */
+/* ::first-line 第一行 */
+/* ::selection 被用户选中的内容 */
+/* ::before 元素的起始位置 结合content使用 content是用于在页面上添加字符 */
+/* ::after 元素的最后位置 结合content使用*/
+span::before{
+    content: 'ab';
+    background-color: red;
+}
+p::first-letter{
+    font-size: 30px;
+}

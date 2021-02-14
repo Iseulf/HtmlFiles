@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS设置方式2：将样式编写到head中的style标签里，通过CSS选择器选择标签设置样式 -->
+    <style>
+      p {
+        color: brown;
+        font-size: 30px;
+      }
+    </style>
+    <!-- CSS设置方式3：将样式设置到单独的一个CSS文件中，然后用link标签引入网页 -->
+    <link rel="stylesheet" href="01_CSS简介.css"/>
+  </head>
+  <body>
+    <!-- CSS：层叠样式表 -->
+    <!-- 网页是一个多层结构，可以为每一层设置样式，但最终看到的是最上边一层 -->
+    <!-- CSS用于设置网页样式 -->
+    <!-- CSS设置方式1：在标签内部通过style属性设置，采用名值对设置 -->
+    <p style="color: red; font-size: 20px">这是标签内部属性定义的样式</p>
+    <p>这是head的style标签定义的样式</p>
+    <h1>这是外部CSS文件定义的样式</h1>
+  </body>
+</html>

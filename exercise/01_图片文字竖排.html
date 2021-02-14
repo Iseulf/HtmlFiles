@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        /* 设置整体大小及位置 */
+        .whole {
+            border: black 1px solid;
+            /* background-color: aqua; */
+            background-color: #fff;
+            width: 250px;
+            margin: 50px auto;
+        }
+
+        /* 设置标题 */
+        .news-title {
+            display: inline-block;
+            border-top: 1px red solid;
+            /* 边框上移 盖住外边框 */
+            margin-top: -1px;
+            /* 设置上下两边距离 */
+            padding: 5px 0;
+            /* 设置加粗 */
+            font-weight: bold;
+        }
+        .news-title:hover{
+            color: brown;
+        }
+
+        /* 设置整体图片 */
+        .news-img {
+            height: 117.95px;
+        }
+        /* 设置图片 */
+        .news-img img {
+            width: 250px;
+            /* border: black 1px solid; */
+            border-top: aliceblue 1px solid;
+            border-bottom: aliceblue 1px solid;
+        }
+        /* img的标题 */
+        .news-img .img-title {
+            font-weight: bold;
+            margin-left: 30px;
+            margin-top: -30px;
+        }
+        .news-img .img-title:hover{
+            color: brown;
+        }
+
+        /* 设置列表 */
+        .news-list{
+            margin-top: 20px;
+        }
+        .news-list li{
+            height: 30px;
+        }
+        .news-list li::before{
+            content: "* ";
+            color: rgb(218, 218, 218);
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .news-list>li:last-of-type{
+            height: 20px;
+        }
+        .news-list li a{
+            color: #666;
+            font-size: 14px;
+        }
+        .news-list li a:hover{
+            color:brown
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <h2 class="news-title"><a href="#">体育</a></h2>
+
+        <div class="news-img">
+            <a href="#">
+                <img src="../img/IO流概述及分类.bmp" alt="体育" />
+                <h3 class="img-title">费德勒搜服</h3>
+            </a>
+        </div>
+
+        <ul class="news-list">
+            <li><a href="#">乔治:我爱LA</a></li>
+            <li><a href="#">格林:时隔三年</a></li>
+            <li><a href="#">塔克4000球鞋</a></li>
+            <li><a href="#">CBA下赛季</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
