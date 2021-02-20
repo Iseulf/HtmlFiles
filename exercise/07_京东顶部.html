@@ -1,17 +1,25 @@
-<!-- 弹出窗的设置 -->
+<!--
+ * @Descripttion: 
+ * @Author: Seulf
+ * @Date: 2021-02-13 11:44:46
+ * @LastEditors: Seulf
+ * @LastEditTime: 2021-02-15 21:10:47
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../icon-font/css/all.css">
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../icon-font/css/all.css" />
     <style>
         body {
-            font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+            font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial,
+                Hiragino Sans GB, "\5B8B\4F53", sans-serif;
         }
 
         .top-nav {
@@ -29,7 +37,7 @@
 
         .clearfix::before,
         .clearfix::after {
-            content: '';
+            content: "";
             display: table;
             clear: both;
         }
@@ -63,7 +71,7 @@
 
         span {
             margin: 0 10px;
-            color: rgba(153, 153, 153, .2);
+            color: rgba(153, 153, 153, 0.2);
             float: left;
         }
 
@@ -110,7 +118,7 @@
         div.location {
             width: 60px;
             float: left;
-        } 
+        }
 
         .right-bar {
             float: right;
@@ -136,25 +144,28 @@
     <div class="top-nav">
         <div class="nav-list clearfix">
             <!-- 弹出框的设置 -->
-            <div class="location ">
+            <div class="location">
                 <div href="#" class="current-city">
                     <i class="fas fa-map-marker-alt style-red"></i>安徽
                 </div>
-                <div class="city-list">
-                </div>
+                <div class="city-list"></div>
             </div>
             <div class="right-bar">
                 <a href="#">你好，请登录</a>
                 <a href="#" class="special">免费注册</a>
                 <a href="#" class="adding">我的订单</a>
                 <span>|</span><a href="#" class="adding hover-white">我的京东<i class="fas fa-angle-down"></i></a>
-                <span>|</span><a href="#" class="adding">京东会员</a>
-                <span>|</span><a href="#" class="adding style-red hover-white">企业采购<i class="fas fa-angle-down"></i></a>
+                <span>|</span><a href="#" class="adding">京东会员</a> <span>|</span><a href="#"
+                    class="adding style-red hover-white">企业采购<i class="fas fa-angle-down"></i></a>
                 <span>|</span>
-                <div href="#" class="adding hover-white">客户服务<i class="fas fa-angle-down"></i></div>
+                <div href="#" class="adding hover-white">
+                    客户服务<i class="fas fa-angle-down"></i>
+                </div>
                 <div class="service-list"></div>
                 <span>|</span>
-                <div href="#" class="adding hover-white">网站导航<i class="fas fa-angle-down"></i></div>
+                <div href="#" class="adding hover-white">
+                    网站导航<i class="fas fa-angle-down"></i>
+                </div>
                 <span>|</span>
                 <div href="#" class="adding">手机京东</div>
             </div>

@@ -1,0 +1,48 @@
+<!--
+ * @Descripttion: 利用背景切换效果, 为了节省资源, 可以把多个图片合成一张图片, 通过background-position来调整展示
+ * @Author: Seulf
+ * @Date: 2021-02-17 10:26:35
+ * @LastEditors: Seulf
+ * @LastEditTime: 2021-02-17 10:59:31
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:first-child:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url(../img/e7eb4d3726f68eec.jpg.webp);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px red double;
+        }
+        a:first-child:hover{
+            background-image: url(../img/e0ab266497850f64.gif);
+        }
+        a:last-child:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url(../img/e7eb4d3726f68eec.jpg.webp);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px red double;
+        }
+        a:last-child:hover{
+            background-position: -30px 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+</body>
+</html>

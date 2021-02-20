@@ -1,0 +1,21 @@
+/*
+ * @Descripttion: 公共样式
+ * @Author: Seulf
+ * @Date: 2021-02-17 17:50:19
+ * @LastEditors: Seulf
+ * @LastEditTime: 2021-02-18 12:21:56
+ */
+.clearfix::after,
+.clearfix::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;;
+    color: #333;
+}
+.middle{
+    width: 1226px;
+    margin: 0 auto;
+}

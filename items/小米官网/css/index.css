@@ -1,0 +1,184 @@
+/*
+ * @Descripttion: index页面的样式
+ * @Author: Seulf
+ * @Date: 2021-02-17 17:49:26
+ * @LastEditors: Seulf
+ * @LastEditTime: 2021-02-18 12:44:17
+ */
+div.sitebar {
+    width: 1263px;
+    background-color: rgb(51, 51, 51);
+}
+
+header {
+    font-size: 12px;
+    color: rgb(176, 176, 145);
+    background-color: rgb(51, 51, 51);
+    height: 40px;
+}
+
+header span {
+    margin: 0 0.3em;
+    color: rgb(66, 66, 64);
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.left-topbar-nav {
+    line-height: 40px;
+    float: left;
+}
+
+.left-topbar-nav div.out_app_down {
+    display: inline-block;
+    position: relative;
+}
+
+.left-topbar-nav div.out_app_down:hover div.app_down {
+    display: block;
+}
+
+.left-topbar-nav div.app_down {
+    position: absolute;
+    font-size: 14px;
+    width: 124px;
+    height: 148px;
+    left: -41px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 0 2px rgb(193, 191, 191);
+    background-color: white;
+    z-index: 999;
+    display: none;
+}
+
+.left-topbar-nav div.app_down img {
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 0;
+    width: 90px;
+
+}
+
+.right-topbar-nav {
+    float: right;
+    line-height: 40px;
+}
+
+.right-topbar-nav a.shop-cart {
+    background-color: rgb(66, 66, 66);
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin: 0 20px;
+    margin-right: 0;
+}
+
+a.shop-cart div.before-message {
+    width: 120px;
+    display: inline-block;
+    position: relative;
+    z-index: 1000;
+}
+
+.right-topbar-nav a.shop-cart:hover div.before-message {
+    padding-bottom: 5px;
+    background-color: white;
+    color: rgb(255, 105, 0);
+}
+
+.right-topbar-nav div.out_message {
+    display: inline-block;
+    position: relative;
+}
+
+.right-topbar-nav div.out_message div.message {
+    width: 276px;
+    height: 18px;
+    padding: 40px 20px;
+    background-color: white;
+    padding-left: 0;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    box-shadow: 0 0 2px rgb(193, 191, 191);
+    z-index: 999;
+    display: none;
+    left: -156px;
+    top: 40px;
+}
+
+.right-topbar-nav div.out_message:hover div.message {
+    display: block;
+}
+
+.top-nav{
+    height: 100px;
+    /* line-height: 100px; */
+}
+.top-nav .logo{
+    width: 55px;
+    height: 100px;
+    float: left;
+    margin-top: 22px;
+    line-height: 100px;
+}
+.top-nav .logo a{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(255, 103, 0);
+    background-image: url(../img/mi-logo.png);
+}
+.top-nav .logo a:hover{
+    background-image: url(../img/mi-home.png);
+}
+.top-nav .nav-list{
+    float: left;
+    line-height: 100px;
+    margin: 0 150px;
+    margin-right: 100px;
+}
+.top-nav .nav-list a{
+    margin: 0 10px;
+}
+.top-nav .search-chart{
+    float: right;
+    line-height: 100px;
+    margin-top: 25px;
+}
+.top-nav .search-chart form{
+    position: relative;
+    display: block;
+    margin-top: 0;
+}
+.top-nav .search-chart [type="search"]{
+    /* display: inline-block; */
+    /* box-sizing: content-box; */
+    width: 245px;
+    height: 50px;
+    padding: 0 10px;
+    color: rgb(193, 191, 191);
+    border: 1px rgb(193, 191, 191) solid;
+    position: absolute;
+    top: 0;
+    right: 51px;
+}
+.top-nav .search-chart [type="submit"]{
+    /* display: inline-block; */
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 52px;
+    height: 50px;
+    padding: 0 ;
+    border: 1px rgb(193, 191, 191) solid;
+    border-collapse: collapse;
+}
+.top-nav .nav-list a:hover{
+    color: rgb(255, 103, 0);
+}
